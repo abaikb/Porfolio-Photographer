@@ -19,6 +19,13 @@ const pics = [
     imageBox.appendChild(img)
     img.classList.add('img-item')
     imageBox.classList.add('image-box')
+    const imgWrapper = document.createElement("div")
+    img.src = pic;
+    imgWrapper.classList.add("imgWrapper")
+    imgWrapper.appendChild(img)
+    imageBox.appendChild(imgWrapper)
+    img.classList.add("img-item")
+  
   })
 
 
@@ -39,20 +46,48 @@ const pics = [
 const form = document.querySelector('form')
 const button = form.querySelector('.button-contact')
 
+const user = {}
 button.addEventListener('click', (event) => {
   event.preventDefault()
   
-  const name = form.elements.name.value
-  const email = form.elements.email.value
-  const message = form.elements.text.value
+  user.name = form.elements.name.value
+  user.email = form.elements.email.value
+  user.message = form.elements.text.value
 
-  console.log(`Name: ${name}`)
-  console.log(`Email: ${email}`)
-  console.log(`Message: ${message}`)
-
+  console.log(user)
+  container.style.display = 'none'
   form.reset()
-
 })
 
+
+
+const imgBoxes = document.querySelectorAll('.img-item')
+for (let i = 0; i < imgBoxes.length; i++) {
+  imgBoxes[i].addEventListener('click', function() {
+
+    const modal = document.createElement('div')
+    modal.classList.add('image-zoom')
+
+    const modalImg = document.createElement('img')
+    modalImg.setAttribute('src', this.getAttribute('src'))
+
+    modalImg.style.width = '57%'
+    modalImg.style.height = '80%'
+    modalImg.style.objectFit = 'cover'
+
+    const closeBtn = document.createElement('button')
+    closeBtn.classList.add('close-btn')
+    closeBtn.textContent = 'close'
+    closeBtn.style.width = '106px'
+    closeBtn.style.height = '38px'
+
+    closeBtn.addEventListener('click', function() {
+      modal.remove()
+    })
+    modal.appendChild(closeBtn)
+    modal.appendChild(modalImg)
+    document.body.appendChild(modal)
+  })
+}
 
   

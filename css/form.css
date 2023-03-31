@@ -1,0 +1,199 @@
+.form-conteiner {
+    width: 100%;
+    height: 100vh;
+    background: rgba(25, 132, 155, 0.3);
+    display: none;
+  }
+  .container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 656px;
+    height: 586px;
+    background: #272A2F;
+}
+form>img {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 597px;
+    top: 31px;
+}
+#contact {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 49px;
+    margin-left: 44px;
+}
+.title {
+    width: 567.77px;
+    margin-left: 44px;
+    margin-top: 15px;
+}
+
+ input[type="name"] {
+    width: 200px;
+    height: 50px;
+    background: #324B53;
+    margin-left: 44px;
+    margin-top: 26px;
+    border: none;
+    padding-left: 20px;
+
+
+}
+
+input[type="email"] {
+    width: 347px;
+    height: 50px;
+    background: #324B53;
+    margin-left: 20px;
+    margin-top: 26px;
+    border: none;
+    padding-left: 20px;
+    color: #FFFFFF;
+
+}
+
+input[type="text"] {
+    background: #324B53;
+    width: 567px;
+    height: 219px;
+    margin-left: 44px;
+    margin-top: 20px;
+    border: none;
+    padding-left: 20px;
+    padding-bottom: 178px;
+    color: #FFFFFF;
+
+}
+
+
+.button-contact {
+    width: 217px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    text-transform: uppercase;
+    background: #272A2F;
+    color: #FFFFFF;
+    margin-left: 44px;
+    margin-top: 26px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background: #19849B;
+}
+
+
+@media screen and (max-width: 643px) {
+    form {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        height: auto;
+        background: #272A2F;
+        padding-bottom:  40px;
+    }
+    .container{
+        position: fixed;
+        left: 0;
+        top: 0;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    form>img {
+        position: absolute;
+        width: 5%;
+        height: 5%;
+        left: 85%;
+        top: 31px;
+    }
+    #contact {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 49px;
+        margin-left: 44px;
+    }
+    .title {
+        width: 90%;
+        margin-left: 44px;
+        margin-top: 15px;
+        font-size: 80%;
+    }
+    
+     input[type="name"] {
+        width: 80%;
+        height: 50px;
+        background: #324B53;
+        margin-left: 44px;
+        margin-top: 26px;
+        border: none;
+        padding-left: 20px;
+    
+    
+    }
+    
+    input[type="email"] {
+        width: 80%;
+        height: 50px;
+        background: #324B53;
+        margin-left: 43px;
+        margin-top: 26px;
+        border: none;
+        padding-left: 26px;
+        color: #FFFFFF;
+    
+    }
+    
+    input[type="text"] {
+        background: #324B53;
+        width: 80%;
+        height: 219px;
+        margin-left: 44px;
+        margin-top: 20px;
+        border: none;
+        padding-left: 20px;
+        padding-bottom: 178px;
+        color: #FFFFFF;
+    
+    }
+    
+    
+    .button-contact {
+        width: 217px;
+        height: 50px;
+        border: 2px solid #FFFFFF;
+        text-transform: uppercase;
+        background: #272A2F;
+        color: #FFFFFF;
+        margin-left: 44px;
+        margin-top: 26px;
+        cursor: pointer;
+    
+    }
+    
+    button:hover {
+        background: #19849B;
+    } 
+}
