@@ -8,12 +8,51 @@ const pics = [
     'https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
     'https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
   ]
+
   const gallery = document.querySelector('.portfolio')
   const imageBox = document.createElement('div')
   gallery.append(imageBox)
+
   pics.forEach(pic => {
     const img = document.createElement('img')
     img.src = pic
     imageBox.appendChild(img)
     img.classList.add('img-item')
+    imageBox.classList.add('image-box')
   })
+
+
+  const btn = document.querySelector('.open')
+  const container = document.querySelector('.form-conteiner')
+  const closeform = document.querySelector('.close')
+
+  btn.addEventListener('click' , (e) => {
+    e.preventDefault()
+     container.style.display = 'block'
+  })
+
+  closeform.addEventListener('click' , (e) => {
+    e.preventDefault()
+     container.style.display = 'none'
+  })
+
+const form = document.querySelector('form')
+const button = form.querySelector('.button-contact')
+
+button.addEventListener('click', (event) => {
+  event.preventDefault()
+  
+  const name = form.elements.name.value
+  const email = form.elements.email.value
+  const message = form.elements.text.value
+
+  console.log(`Name: ${name}`)
+  console.log(`Email: ${email}`)
+  console.log(`Message: ${message}`)
+
+  form.reset()
+
+})
+
+
+  
