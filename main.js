@@ -71,7 +71,7 @@ for (let i = 0; i < imgBoxes.length; i++) {
     const modalImg = document.createElement('img')
     modalImg.setAttribute('src', this.getAttribute('src'))
 
-    modalImg.style.width = '57%'
+    modalImg.style.width = '70%'
     modalImg.style.height = '80%'
     modalImg.style.objectFit = 'cover'
 

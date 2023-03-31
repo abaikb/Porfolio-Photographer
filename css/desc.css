@@ -55,13 +55,13 @@
   object-fit: cover;
 }
 .close-btn {
-  margin-left: 29%;
+  margin-left: 50%;
   text-transform: uppercase;
-  background-color: #272A2F;
+  background-color: transparent;
   font-size: 16px;
   letter-spacing: 1.5px;
   color: #FFFFFF;
-  border: none;
+  border: 1px solid white;
 }
 .close-btn:hover {
   border: none;

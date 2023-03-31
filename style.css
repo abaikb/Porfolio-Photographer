@@ -16,7 +16,7 @@
       background-color: #272A2F;
   }
   section {
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
   .image-box {
     display: flex;
@@ -128,7 +128,7 @@
   }
 
 
-  @media screen and (max-width: 806px) {
+  @media screen and (max-width: 602px) {
     .img-item {
         width: 100%;
         height: 180px;
@@ -137,7 +137,7 @@
     }
     .imgWrapper {
       background-color: rgba(25, 131, 155, 0.726);
-      width: 23%;
+      width: 22%;
       height: 180px;
       transition: 0.4s;
       margin-bottom: 20px;
