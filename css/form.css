@@ -4,6 +4,14 @@
     background: rgba(25, 132, 155, 0.3);
     display: none;
   }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
   .container{
     position: fixed;
     left: 0;

@@ -32,6 +32,8 @@ const pics = [
   const btn = document.querySelector('.open')
   const container = document.querySelector('.form-conteiner')
   const closeform = document.querySelector('.close')
+  var span = document.getElementsByClassName("closek")[0];
+
 
   btn.addEventListener('click' , (e) => {
     e.preventDefault()
@@ -42,6 +44,7 @@ const pics = [
     e.preventDefault()
      container.style.display = 'none'
   })
+
 
 const form = document.querySelector('form')
 const button = form.querySelector('.button-contact')
