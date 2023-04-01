@@ -55,6 +55,11 @@ form>img {
 
 }
 
+input[type="name"]:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
 input[type="email"] {
     width: 347px;
     height: 50px;
